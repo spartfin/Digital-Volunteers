@@ -1,0 +1,267 @@
+.header {
+  display: flex;
+  max-width: 1304px;
+  width: 100%;
+  min-height: 81px;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.header__logo {
+  display: flex;
+  width: 155px;
+  min-height: 43px;
+  align-items: center;
+  font-family: $textLatoBlack;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-right: 42px;
+  margin-left: 17px;
+}
+
+.header__logo img {
+  min-width: 51px;
+  height: 43px;
+  margin-right: 10px;
+}
+
+.header__form {
+  display: flex;
+  max-width: 383px;
+  width: 100%;
+  height: 33px;
+  border: 1px solid #d0cccc;
+  margin-right: 26px;
+  margin-top: 2px;
+}
+
+.header__form input {
+  max-width: 350px;
+  width: 100%;
+  border: none;
+}
+
+.header__form input::placeholder {
+  font-size: 12px;
+  color: #d0cccc;
+  padding-left: 13px;
+}
+
+.header__form_btn {
+  width: 31px;
+  height: 29px;
+  background-image: url("../img/search-icon.png");
+  background-repeat: no-repeat;
+  background-position: 4px 12px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.header__nav {
+  display: flex;
+  width: 100%;
+  min-width: 360px;
+}
+
+.header__navigation {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  font-family: $textLatoMedium;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 300;
+  min-width: 360px;
+}
+
+.header__navigation a {
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.header__navigation li {
+  min-width: 110px;
+
+  &:first-child {
+    margin-right: auto;
+  }
+}
+
+.header__sections_nav {
+  list-style: none;
+  display: none;
+  max-width: 364px;
+  min-height: 190px;
+  position: absolute;
+  z-index: 10;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 38px;
+  border-radius: 10px;
+  background-color: white;
+  top: 101px;
+  box-shadow: 0 12px 69px 0 rgba(0, 0, 0, 0.22);
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 8px;
+    background-image: url("../img/arrow-white-icon.png");
+    top: -8px;
+    left: 37px;
+  }
+}
+
+.header__sections {
+  position: relative;
+  padding-left: 38px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 17px;
+    background-image: url("../img/burger-icon.svg");
+    background-size: 26px 17px;
+    top: 2px;
+    left: 0;
+  }
+
+  &:focus + .header__sections_nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.header__sections_item {
+  display: flex;
+  align-items: center;
+  width: 41.5%;
+  margin-bottom: 30px;
+
+  &:nth-child(odd) {
+    width: 58.5%;
+  }
+}
+
+.header__sections_item a {
+  position: relative;
+  padding-left: 35px;
+  font-family: $textLatoLight;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #424242;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/contests-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.header__sections_item .header__grandees {
+  &::before {
+    background-image: url("../img/grandees-icon.png");
+  }
+}
+
+.header__sections_item .header__courses {
+  &::before {
+    background-image: url("../img/courses-icon.png");
+  }
+}
+
+.header__sections_item .header__help {
+  &::before {
+    background-image: url("../img/help-icon.png");
+  }
+}
+
+.header__sections_item .header__internships {
+  &::before {
+    background-image: url("../img/internships-icon.png");
+  }
+}
+
+.header__project {
+  position: relative;
+  padding-right: 14px;
+  margin-right: 31px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 5px;
+    background-image: url("../img/arrow-icon.png");
+    top: 9px;
+    right: 0;
+  }
+}
+
+.header__enter {
+  position: relative;
+  padding-left: 30px;
+  font-family: $textLatoMedium;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #191919;
+  margin-right: 35px;
+  margin-left: 36px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/login-icon.png");
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.header__language {
+  position: relative;
+  min-width: 33px;
+  height: 19px;
+  background-image: url("../img/russia.png");
+  background-repeat: no-repeat;
+  padding-right: 14px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 5px;
+    background-image: url("../img/arrow-icon.png");
+    top: 8px;
+    right: 0;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

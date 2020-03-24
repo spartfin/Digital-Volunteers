@@ -13,26 +13,53 @@
 <body>
   <header class="header">
     <h1 class="visually-hidden">Цифровые волонтёры</h1>
+    <a class="header__logo" href="#">
+      <img src="img/logo.png" width="61" height="43" alt="Логотип «Цифровые волонтёры»">
+      <p>Цифровые волонтёры</p>
+    </a>
+    <form action="#" class="header__form" method="get">
+      <input id="search-field" name="search" placeholder="Поиск по сайту" required type="search">
+      <label aria-label="Поиск по сайту" class="header__form_label" for="search-field"></label>
+      <button class="header__form_btn" type="submit"><span class="visually-hidden">Найти</span></button>
+    </form>
     <nav class="header__nav">
-      <a class="header__logo" href="#">
-        <img src="img/logo.png" width="61" height="43" alt="Логотип «Цифровые волонтёры»">
-      </a>
       <ul class="header__navigation">
-        <li><a class="variables__scroll" href="#variables">Почему мы?</a></li>
-        <li><a class="numbers__scroll" href="#numbers">Номера</a></li>
-        <li><a class="reviews__scroll" href="#reviews">Отзывы</a></li>
-        <li><a class="feedback__scroll" href="#feedback">Как нас найти</a></li>
+        <li><a class="header__sections" href="#">Разделы</a>
+          <ul class="header__sections_nav">
+            <li class="header__sections_item"><a class="header__contests" href="#">Гранты</a></li>
+            <li class="header__sections_item"><a class="header__grandees" href="#">Конкурсы</a></li>
+            <li class="header__sections_item"><a class="header__courses" href="#">Курсы</a></li>
+            <li class="header__sections_item"><a class="header__help" href="#">Помощь</a></li>
+            <li class="header__sections_item"><a class="header__internships" href="#">Стажировки</a></li>
+          </ul>
+        </li>
+        <li><a class="header__project" href="#">О проекте</a></li>
+        <li><a href="#">Новости</a></li>
       </ul>
     </nav>
+    <button class="header__enter">Войти</button>
+    <button class="header__language"><span class="visually-hidden">Выбор языка</span></button>
   </header>
 
   <main class="main">
+    <section class="preview">
+      <div class="preview__content">
+        <h2>Объеденяем усилия, чтобы сделать образовани доступным для всех</h2>
+        <p>Узнать больше о стратегии развития проекта</p>
+        <button>узнать подробнее</button>
+      </div>
+      <ul class="preview__slides">
+        <li class="preview__slide preview__slide_Active"></li>
+        <li class="preview__slide"></li>
+        <li class="preview__slide"></li>
+        <li class="preview__slide"></li>
+        <li class="preview__slide"></li>
+      </ul>
+    </section>
   </main>
 
   <footer class="footer">
   </footer>
-
-  <section class="overlay"></section>
 
   <script src="https://unpkg.com/imask"></script>
   <script src="js/main.js"></script>
