@@ -6,6 +6,18 @@
   align-items: center;
   margin: 0 auto;
   padding-right: 12px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 61px;
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
 .header__logo {
@@ -20,12 +32,48 @@
   text-transform: uppercase;
   margin-right: 40px;
   margin-left: 14px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 110px;
+    min-height: 33px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 25px;
+    margin-left: 8px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 90px;
+    max-width: 90px;
+    min-height: 25px;
+    max-height: 25px;
+    font-size: 8px;
+    line-height: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+  }
 }
 
 .header__logo img {
   min-width: 51px;
   height: 43px;
   margin-right: 10px;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    width: 42px;
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 30px;
+    height: 23px;
+    margin-right: 3px;
+  }
 }
 
 .header__form {
@@ -36,6 +84,17 @@
   border: 1px solid #d0cccc;
   margin-right: 26px;
   margin-top: 2px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 215px;
+    margin-left: 95px;
+    height: 25px;
+    margin-bottom: 10px;
+  }
 }
 
 .header__form input {
@@ -48,6 +107,16 @@
   font-size: 12px;
   color: #d0cccc;
   padding-left: 13px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 10px;
+    padding-left: 5px;
+  }
+
+  @media (max-width: $mobile-width) {
+    line-height: 10px;
+    padding-left: 3px;
+  }
 }
 
 .header__form_btn {
@@ -56,6 +125,14 @@
   background-image: url("../img/search-icon.png");
   background-repeat: no-repeat;
   background-position: 4px 12px;
+
+  @media (max-width: $mobile-width) {
+    width: 27px;
+    height: 25px;
+    background-image: url("../img/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
 
   &:hover {
     opacity: 0.5;
@@ -66,6 +143,10 @@
   display: flex;
   width: 100%;
   min-width: 360px;
+
+  @media (max-width: $mobile-width) {
+    min-width: auto;
+  }
 }
 
 .header__navigation {
@@ -77,6 +158,18 @@
   line-height: 21px;
   font-weight: 300;
   min-width: 360px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 12px;
+    line-height: 14px;
+    min-width: 310px;
+    padding-right: 40px;
+  }
 }
 
 .header__navigation a {
@@ -87,6 +180,14 @@
 
 .header__navigation li {
   min-width: 110px;
+
+  @media (max-width: $tablet-width) {
+    min-width: 90px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-width: 70px;
+  }
 
   &:first-child {
     margin-right: auto;
@@ -108,6 +209,22 @@
   top: 101px;
   box-shadow: 0 12px 69px 0 rgba(0, 0, 0, 0.22);
 
+  @media (max-width: $mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 19px;
+    top: 70px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 100px;
+    max-width: 220px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    top: 70px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -123,6 +240,10 @@
   position: relative;
   padding-left: 38px;
 
+  @media (max-width: $tablet-width) {
+    padding-left: 22px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -132,6 +253,12 @@
     background-size: 26px 17px;
     top: 2px;
     left: 0;
+
+    @media (max-width: $tablet-width) {
+      width: 20px;
+      height: 12px;
+      background-size: 20px 12px;
+    }
   }
 
   &:focus + .header__sections_nav {
@@ -149,6 +276,10 @@
   &:nth-child(odd) {
     width: 58.5%;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .header__sections_item a {
@@ -158,6 +289,17 @@
   font-size: 18px;
   font-weight: lighter;
   color: #424242;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 11px;
+    line-height: 12px;
+    padding-left: 20px;
+  }
 
   &::before {
     position: absolute;
@@ -169,6 +311,12 @@
     background-position: center;
     top: 0;
     left: 0;
+
+    @media (max-width: $mobile-width) {
+      width: 14px;
+      height: 14px;
+      background-size: cover;
+    }
   }
 
   &:hover {
@@ -205,6 +353,15 @@
   padding-right: 14px;
   margin-right: 31px;
 
+  @media (max-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 10px;
+    margin-right: 15px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -213,6 +370,10 @@
     background-image: url("../img/arrow-icon.png");
     top: 9px;
     right: 0;
+
+    @media (max-width: $mobile-width) {
+      top: 6px;
+    }
   }
 }
 
@@ -227,6 +388,24 @@
   margin-right: 35px;
   margin-left: 36px;
 
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 0;
+    line-height: 0;
+    padding-left: 10px;
+    margin-right: 0;
+    position: absolute;
+    bottom: 24px;
+    right: 45px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -235,6 +414,17 @@
     background-image: url("../img/login-icon.png");
     top: 0;
     left: 0;
+
+    @media (max-width: $tablet-width) {
+      width: 14px;
+      height: 14px;
+      background-size: cover;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 13px;
+      height: 13px;
+    }
   }
 
   &:hover {
@@ -250,6 +440,15 @@
   background-repeat: no-repeat;
   padding-right: 14px;
 
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    min-width: 13px;
+    height: 14px;
+    background-size: cover;
+    bottom: 11px;
+    right: 15px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -258,6 +457,11 @@
     background-image: url("../img/arrow-icon.png");
     top: 8px;
     right: 0;
+
+    @media (max-width: $mobile-width) {
+      top: 6px;
+      right: -10px;
+    }
   }
 
   &:hover {
