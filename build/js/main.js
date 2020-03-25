@@ -7,6 +7,7 @@
 
   var previewSlide = document.getElementsByClassName('preview__slide');
   for (var i = 0; i < previewSlide.length; i++) {
+    // eslint-disable-next-line no-shadow
     (function (i) {
       previewSlide[i].addEventListener('click', function () {
         prevItem = activeItem;
